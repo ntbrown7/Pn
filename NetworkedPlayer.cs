@@ -4,16 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
-/* 
-    TODO: Organize this document so that it looks as follows:
-
-    Start() 
-    Update() 
-    [Command]
-    [ClientRpc]
-    All Other Methods
-
-*/
 public class NetworkedPlayer : NetworkBehaviour
 {
     [SyncVar]
@@ -23,7 +13,7 @@ public class NetworkedPlayer : NetworkBehaviour
     [SyncVar]
     public string playerName;
     [SyncVar]
-    public string playerCharacter;//Will need to change to actual game object
+    public string playerCharacter;
     [SyncVar]
     public GameObject playerObject;
     /* This can be used for a pregame countdown, which will be useful for slow connections and such */
